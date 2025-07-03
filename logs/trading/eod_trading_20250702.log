@@ -1,0 +1,24 @@
+2025-07-02 22:23:15 | INFO     | src.utils.logger_setup:setup_logger:68 | 日志系统初始化完成
+2025-07-02 22:23:15 | INFO     | __main__:main:59 | ============================================================
+2025-07-02 22:23:15 | INFO     | __main__:main:60 | EOD期权交易机器人启动
+2025-07-02 22:23:15 | INFO     | __main__:main:61 | ============================================================
+2025-07-02 22:23:15 | INFO     | __main__:main:62 | 运行模式: test
+2025-07-02 22:23:15 | INFO     | __main__:main:63 | 日志级别: INFO
+2025-07-02 22:23:15 | INFO     | __main__:main:64 | 干运行模式: False
+2025-07-02 22:23:15 | INFO     | __main__:main:65 | 快速退出模式: False
+2025-07-02 22:23:15 | INFO     | __main__:main:66 | 交易标的: SPY
+2025-07-02 22:23:15 | INFO     | __main__:main:67 | API地址: https://paper-api.alpaca.markets
+2025-07-02 22:23:15 | INFO     | src.utils.logger_setup:setup_logger:68 | 日志系统初始化完成
+2025-07-02 22:23:15 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$100396.42, 买入力$401585.68
+2025-07-02 22:23:15 | INFO     | src.trading.executor:sync_existing_positions:903 | 正在同步Alpaca账户现有持仓...
+2025-07-02 22:23:15 | INFO     | src.trading.executor:sync_existing_positions:988 | 持仓同步完成: 总共同步了 0 个期权持仓
+2025-07-02 22:23:15 | INFO     | src.utils.notifications:__init__:39 | 通知管理器初始化完成（简化模式）
+2025-07-02 22:23:15 | INFO     | __main__:main:118 | 正在启动交易机器人...
+2025-07-02 22:23:15 | INFO     | __main__:main:119 | 按 Ctrl+C 可触发优雅退出
+2025-07-02 22:23:15 | INFO     | src.bot.trading_bot:start:66 | 启动末日期权交易机器人
+2025-07-02 22:23:15 | INFO     | src.utils.notifications:send_message:63 | [GENERAL] 🚀 EOD期权交易机器人已启动
+标的: SPY
+账户资金: $100,396.42
+最大日风险: $2,007.93
+交易时间: 09:30 - 15:50
+2025-07-02 22:23:15 | INFO     | src.bot.trading_bot:_setup_schedule:121 | 📊 监控频率设置: 持仓检查=3秒, 市场数据=3秒, 信号检查=3秒

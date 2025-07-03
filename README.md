@@ -131,6 +131,70 @@ python main.py --mode test
 - 相同逻辑
 - 安全测试环境
 
+## 💻 本地部署运行
+
+### **MacBook关盖后继续运行**
+```bash
+# 1. 启动程序
+./run_trading_bot_nohup.sh
+
+# 2. 检查状态
+./check_trading_bot_status.sh
+
+# 3. 关闭MacBook盖子 ✅ (程序继续运行)
+
+# 4. 重新打开后查看日志
+tail -f trading_bot.log
+
+# 5. 需要时停止
+./stop_trading_bot.sh
+```
+
+### **其他本地运行方式**
+```bash
+# 防睡眠运行 (推荐新手)
+./run_trading_bot_keep_awake.sh
+
+# Screen会话运行 (可远程管理)
+./run_trading_bot_screen.sh
+
+# 查看详细指南
+cat RUNNING_WITH_CLOSED_LID.md
+```
+
+## ☁️ 免费云托管
+
+### **推荐云平台对比**
+
+| 平台 | 免费额度 | 适用场景 | 稳定性 | 推荐度 |
+|------|----------|----------|--------|--------|
+| **Oracle Cloud** | 永久免费 | 24/7运行 | ⭐⭐⭐⭐⭐ | 🥇 **最推荐** |
+| **GitHub Codespaces** | 120小时/月 | 开发测试 | ⭐⭐⭐⭐ | 🥈 **最简单** |
+| **Railway** | $5免费额度 | 快速部署 | ⭐⭐⭐⭐ | 🥉 **最快** |
+
+### **快速云部署**
+```bash
+# 查看所有云托管选项
+cat cloud_deployment/FREE_CLOUD_HOSTING.md
+
+# Oracle Cloud (永久免费)
+cat cloud_deployment/oracle_cloud_setup.md
+
+# GitHub Codespaces (最简单)
+cat cloud_deployment/github_codespaces_setup.md
+
+# Railway (最快部署)
+cat cloud_deployment/railway_setup.md
+
+# 一键配置脚本
+./cloud_deployment/quick_deploy.sh
+```
+
+### **推荐策略**
+- **长期运行**: Oracle Cloud (永久免费)
+- **新手入门**: GitHub Codespaces (一键启动)
+- **快速测试**: Railway (5分钟部署)
+
 ## ⚠️ 重要提醒
 
 ### **风险控制**

@@ -1,0 +1,1182 @@
+2025-06-05 09:33:50 | INFO     | src.utils.logger_setup:setup_logger:64 | 日志系统初始化完成
+2025-06-05 09:33:50 | INFO     | __main__:main:53 | ============================================================
+2025-06-05 09:33:50 | INFO     | __main__:main:54 | EOD期权交易机器人启动
+2025-06-05 09:33:50 | INFO     | __main__:main:55 | ============================================================
+2025-06-05 09:33:50 | INFO     | __main__:main:56 | 运行模式: test
+2025-06-05 09:33:50 | INFO     | __main__:main:57 | 日志级别: INFO
+2025-06-05 09:33:50 | INFO     | __main__:main:58 | 干运行模式: False
+2025-06-05 09:33:50 | INFO     | __main__:main:59 | 交易标的: SPY
+2025-06-05 09:33:50 | INFO     | __main__:main:60 | API地址: https://paper-api.alpaca.markets
+2025-06-05 09:33:50 | INFO     | src.utils.logger_setup:setup_logger:64 | 日志系统初始化完成
+2025-06-05 09:33:50 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:33:50 | INFO     | src.trading.executor:sync_existing_positions:681 | 正在同步Alpaca账户现有持仓...
+2025-06-05 09:33:50 | INFO     | src.trading.executor:sync_existing_positions:766 | 持仓同步完成: 总共同步了 0 个期权持仓
+2025-06-05 09:33:50 | INFO     | src.utils.notifications:__init__:39 | 通知管理器初始化完成（简化模式）
+2025-06-05 09:33:50 | INFO     | __main__:main:72 | 正在启动交易机器人...
+2025-06-05 09:33:50 | INFO     | src.bot.trading_bot:start:58 | 启动末日期权交易机器人
+2025-06-05 09:33:50 | INFO     | src.utils.notifications:send_message:63 | [GENERAL] 🚀 EOD期权交易机器人已启动
+标的: SPY
+账户资金: $10,029.63
+最大日风险: $200.59
+交易时间: 09:30 - 15:50
+2025-06-05 09:34:21 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:34:21 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:34:51 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:34:51 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:34:51 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:35:22 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:35:22 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:35:52 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:35:52 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:35:52 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:36:22 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:36:22 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:36:53 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:36:53 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:36:53 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:37:23 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:37:23 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:37:53 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:37:54 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:37:54 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:38:24 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:38:24 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:38:54 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:38:54 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:38:54 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:39:25 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:39:25 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:39:55 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:39:55 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:39:55 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:40:26 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:40:26 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:40:56 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:40:56 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:40:56 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:41:26 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:41:26 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:41:57 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:41:57 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:41:57 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:42:27 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:42:27 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:42:58 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:42:58 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:42:58 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:43:28 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:43:28 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:43:59 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:43:59 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:43:59 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:44:29 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:44:29 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:45:00 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:45:00 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:45:00 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:45:30 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:45:30 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:46:01 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:46:01 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:46:01 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:46:31 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:46:31 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:47:02 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:47:02 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:47:02 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:47:32 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:47:32 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:48:02 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:48:03 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:48:03 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:48:33 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:48:33 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:49:03 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:49:04 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:49:04 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:49:34 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:49:34 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:50:04 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:50:05 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:50:05 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:50:35 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:50:35 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:51:05 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:51:06 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:51:06 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:51:36 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:51:36 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:52:05 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:52:07 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:52:07 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:52:37 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:52:37 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:53:06 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:53:07 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:53:07 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:53:38 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:53:38 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:54:07 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:54:09 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:54:09 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:54:39 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:54:39 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:55:08 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:55:09 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:55:09 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:55:40 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:55:40 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:56:09 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:56:10 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:56:10 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:56:41 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:56:41 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:57:10 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:57:11 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:57:11 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:57:42 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:57:42 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:58:11 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:58:12 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:58:12 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:58:43 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:58:43 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:59:12 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 09:59:13 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:59:13 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 09:59:43 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 09:59:43 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:00:13 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:00:14 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:00:14 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:00:44 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:00:44 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:01:14 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:01:15 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:01:15 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:01:45 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:01:45 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:02:15 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:02:16 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:02:16 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:02:46 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:02:46 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:03:16 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:03:17 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:03:17 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:03:47 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:03:47 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:04:17 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:04:18 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:04:18 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:04:48 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:04:48 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:05:18 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:05:19 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:05:19 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:05:49 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:05:49 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:06:19 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:06:20 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:06:20 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:06:50 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:06:50 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:07:19 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:07:21 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:07:21 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:07:51 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:07:51 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:08:20 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:08:21 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:08:21 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:08:52 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:08:52 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:09:21 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:09:22 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:09:22 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:09:53 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:09:53 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:10:22 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:10:23 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:10:23 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:10:54 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:10:54 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:11:23 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:11:24 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:11:24 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:11:55 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:11:55 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:12:24 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:12:25 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:12:25 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:12:56 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:12:56 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:13:25 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:13:26 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:13:26 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:13:57 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:13:57 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:14:26 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:14:27 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:14:27 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:14:58 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:14:58 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:15:27 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:15:28 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:15:28 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:15:59 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:15:59 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:16:28 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:16:29 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:16:29 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:17:00 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:17:00 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:17:29 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:17:30 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:17:30 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:18:01 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:18:01 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:18:30 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:18:31 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:18:31 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:19:02 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:19:02 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:19:31 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:19:32 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:19:32 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:20:03 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:20:03 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:20:32 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:20:33 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:20:33 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:21:03 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:21:03 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:21:33 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:21:34 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:21:34 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:22:04 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:22:04 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:22:34 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:22:35 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:22:35 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:23:05 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:23:05 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:23:35 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:23:36 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:23:36 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:24:06 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:24:06 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:24:36 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:24:37 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:24:37 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:25:07 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:25:07 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:25:37 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:25:38 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:25:38 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:26:08 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:26:08 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:26:38 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:26:39 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:26:39 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:27:09 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:27:09 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:27:38 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:27:40 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:27:40 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:28:10 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:28:10 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:28:39 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:28:40 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:28:40 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:29:11 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:29:11 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:29:40 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:29:41 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:29:41 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:30:12 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:30:12 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:30:41 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:30:42 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:30:42 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:31:13 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:31:13 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:31:42 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:31:43 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:31:43 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:32:14 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:32:14 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:32:43 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:32:44 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:32:44 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:33:15 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:33:15 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:33:44 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:33:45 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:33:45 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:33:50 | INFO     | src.utils.notifications:send_message:63 | [GENERAL] 📊 每小时报告
+时间: 10:33
+当前头寸: 0
+当日交易: 0
+当日盈亏: $0.00
+账户总值: $10,029.63
+2025-06-05 10:34:16 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:34:16 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:34:45 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:34:47 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:34:47 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:35:17 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:35:17 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:35:46 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:35:48 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:35:48 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:36:18 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:36:18 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:36:48 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:36:49 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:36:49 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:37:19 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:37:19 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:37:48 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:37:50 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:37:50 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:38:20 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:38:20 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:38:49 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:38:51 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:38:51 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:39:21 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:39:21 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:39:50 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:39:52 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:39:52 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:40:22 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:40:22 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:40:51 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:40:52 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:40:52 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:41:23 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:41:23 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:41:52 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:41:53 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:41:53 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:42:24 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:42:24 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:42:53 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:42:54 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:42:54 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:43:24 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:43:24 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:43:54 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:43:55 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:43:55 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:44:25 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:44:25 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:44:55 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:44:56 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:44:56 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:45:26 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:45:26 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:45:56 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:45:57 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:45:57 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:46:27 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:46:27 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:46:57 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:46:58 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:46:58 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:47:28 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:47:28 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:47:58 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:47:59 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:47:59 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:48:29 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:48:29 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:48:59 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:49:00 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:49:00 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:49:30 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:49:30 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:50:00 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:50:01 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:50:01 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:50:31 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:50:31 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:51:01 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:51:02 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:51:02 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:51:32 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:51:32 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:52:01 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:52:03 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:52:03 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:52:33 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:52:33 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:53:02 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:53:03 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:53:03 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:53:34 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:53:34 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:54:04 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:54:05 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:54:05 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:54:35 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:54:35 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:55:04 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:55:06 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:55:06 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:55:36 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:55:36 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:56:05 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:56:07 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:56:07 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:56:37 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:56:37 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:57:06 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:57:08 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:57:08 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:57:38 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:57:38 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:58:07 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:58:09 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:58:09 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:58:39 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:58:39 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:59:08 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 10:59:10 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:59:10 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 10:59:40 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 10:59:40 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:00:09 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:00:11 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:00:11 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:00:41 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:00:41 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:01:09 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:01:12 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:01:12 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:01:42 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:01:42 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:02:10 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:02:12 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:02:12 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:02:43 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:02:43 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:03:11 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:03:13 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:03:13 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:03:44 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:03:44 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:04:12 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:04:14 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:04:14 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:04:44 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:04:44 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:05:13 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:05:15 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:05:15 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:05:45 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:05:45 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:06:14 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:06:16 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:06:16 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:06:46 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:06:46 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:07:15 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:07:17 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:07:17 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:07:47 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:07:47 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:08:16 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:08:18 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:08:18 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:08:48 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:08:48 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:09:17 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:09:19 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:09:19 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:09:49 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:09:49 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:10:18 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:10:20 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:10:20 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:10:50 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:10:50 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:11:19 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:11:21 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:11:21 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:11:51 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:11:51 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:12:19 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:12:22 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:12:22 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:12:52 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:12:52 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:13:20 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:13:22 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:13:22 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:13:53 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:13:53 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:14:21 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:14:23 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:14:23 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:14:54 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:14:54 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:15:22 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:15:24 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:15:24 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:15:55 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:15:55 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:16:23 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:16:25 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:16:25 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:16:56 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:16:56 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:17:24 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:17:26 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:17:26 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:17:57 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:17:57 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:18:25 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:18:27 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:18:27 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:18:57 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:18:57 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:19:26 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:19:28 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:19:28 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:19:58 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:19:58 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:20:27 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:20:29 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:20:29 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:20:59 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:20:59 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:21:28 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:21:30 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:21:30 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:22:00 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:22:00 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:22:29 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:22:31 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:22:31 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:23:01 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:23:01 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:23:30 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:23:32 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:23:32 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:24:02 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:24:02 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:24:31 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:24:33 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:24:33 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:25:03 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:25:03 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:25:32 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:25:34 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:25:34 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:26:04 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:26:04 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:26:33 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:26:35 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:26:35 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:27:05 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:27:05 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:27:34 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:27:36 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:27:36 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:28:06 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:28:06 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:28:35 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:28:37 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:28:37 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:29:07 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:29:07 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:29:35 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:29:38 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:29:38 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:30:08 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:30:08 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:30:36 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:30:38 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:30:38 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:31:09 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:31:09 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:31:37 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:31:39 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:31:39 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:32:10 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:32:10 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:32:38 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:32:40 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:32:40 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:33:11 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:33:11 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:33:39 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:33:41 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:33:41 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:33:51 | INFO     | src.utils.notifications:send_message:63 | [GENERAL] 📊 每小时报告
+时间: 11:33
+当前头寸: 0
+当日交易: 0
+当日盈亏: $0.00
+账户总值: $10,029.63
+2025-06-05 11:34:12 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:34:12 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:34:40 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:34:42 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:34:42 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:35:13 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:35:13 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:35:41 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:35:43 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:35:43 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:36:14 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:36:14 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:36:42 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:36:44 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:36:44 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:37:15 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:37:15 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:37:43 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:37:45 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:37:45 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:38:16 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:38:16 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:38:44 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:38:46 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:38:46 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:39:17 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:39:17 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:39:45 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:39:47 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:39:47 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:40:18 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:40:18 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:40:46 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:40:48 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:40:48 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:41:19 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:41:19 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:41:47 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:41:49 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:41:49 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:42:20 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:42:20 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:42:48 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:42:50 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:42:50 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:43:21 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:43:21 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:43:49 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:43:51 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:43:51 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:44:22 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:44:22 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:44:50 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:44:52 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:44:52 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:45:23 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:45:23 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:45:51 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:45:53 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:45:53 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:46:24 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:46:24 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:46:52 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:46:54 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:46:54 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:47:25 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:47:25 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:47:53 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:47:55 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:47:55 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:48:26 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:48:26 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:48:54 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:48:56 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:48:56 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:49:27 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:49:27 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:49:55 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:49:57 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:49:57 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:50:28 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:50:28 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:50:56 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:50:58 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:50:58 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:51:28 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:51:28 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:51:57 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:51:59 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:51:59 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:52:29 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:52:29 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:52:58 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:53:00 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:53:00 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:53:30 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:53:30 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:53:59 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:54:01 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:54:01 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:54:31 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:54:31 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:55:00 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:55:02 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:55:02 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:55:32 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:55:32 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:56:01 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:56:03 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:56:03 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:56:33 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:56:33 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:57:02 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:57:04 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:57:04 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:57:34 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:57:34 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:58:03 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:58:05 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:58:05 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:58:35 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:58:35 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:59:04 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 11:59:06 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:59:06 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 11:59:36 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 11:59:36 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:00:04 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:00:07 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:00:07 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:00:37 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:00:37 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:01:05 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:01:07 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:01:07 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:01:38 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:01:38 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:02:07 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:02:09 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:02:09 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:02:39 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:02:39 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:03:08 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:03:10 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:03:10 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:03:40 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:03:40 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:04:09 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:04:11 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:04:11 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:04:41 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:04:41 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:05:10 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:05:12 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:05:12 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:05:42 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:05:42 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:06:11 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:06:13 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:06:13 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:06:43 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:06:43 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:07:11 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:07:14 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:07:14 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:07:44 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:07:44 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:08:12 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:08:14 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:08:14 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:08:45 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:08:45 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:09:13 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:09:15 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:09:15 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:09:46 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:09:46 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:10:14 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:10:16 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:10:16 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:10:47 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:10:47 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:11:15 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:11:17 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:11:17 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:11:48 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:11:48 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:12:16 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:12:18 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:12:18 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:12:49 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:12:49 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:13:17 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:13:19 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:13:19 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:13:50 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:13:50 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:14:18 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:14:20 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:14:20 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:14:50 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:14:50 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:15:19 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:15:21 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:15:21 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:15:51 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:15:51 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:16:20 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:16:22 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:16:22 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:16:52 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:16:52 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:17:21 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:17:23 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:17:23 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:17:53 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:17:53 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:18:22 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:18:24 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:18:24 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:18:54 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:18:54 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:19:23 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:19:25 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:19:25 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:19:55 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:19:55 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:20:24 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:20:26 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:20:26 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:20:56 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:20:56 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:21:25 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:21:27 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:21:27 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:21:57 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:21:57 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:22:26 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:22:28 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:22:28 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:22:58 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:22:58 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:23:26 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:23:29 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:23:29 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:23:59 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:23:59 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:24:27 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:24:29 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:24:29 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:25:00 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:25:00 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:25:28 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:25:30 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:25:30 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:26:01 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:26:01 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:26:29 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:26:31 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:26:31 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:27:02 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:27:02 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:27:30 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:27:32 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:27:32 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:28:03 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:28:03 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:28:31 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:28:33 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:28:33 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:29:03 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:29:03 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:29:32 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:29:34 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:29:34 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:30:04 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:30:04 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:30:33 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:30:35 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:30:35 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:31:05 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:31:05 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:31:34 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:31:36 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:31:36 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:32:06 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:32:06 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:32:35 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:32:37 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:32:37 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:33:07 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:33:07 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:33:36 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:33:38 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:33:38 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:33:52 | INFO     | src.utils.notifications:send_message:63 | [GENERAL] 📊 每小时报告
+时间: 12:33
+当前头寸: 0
+当日交易: 0
+当日盈亏: $0.00
+账户总值: $10,029.63
+2025-06-05 12:34:08 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:34:08 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:34:37 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:34:39 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:34:39 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:35:09 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:35:09 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:35:38 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:35:40 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:35:40 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:36:10 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:36:10 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:36:39 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:36:41 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:36:41 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:37:12 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:37:12 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:37:39 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:37:43 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:37:43 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:38:13 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:38:13 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:38:40 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:38:44 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:38:44 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:39:14 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:39:14 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:39:42 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:39:45 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:39:45 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:40:15 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:40:15 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:40:43 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:40:46 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:40:46 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:41:16 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:41:16 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:41:44 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:41:47 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:41:47 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:42:17 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:42:17 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:42:45 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:42:48 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:42:48 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:43:18 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:43:18 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:43:46 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:43:49 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:43:49 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:44:19 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:44:19 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:44:47 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:44:50 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:44:50 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:45:20 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:45:20 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:45:47 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:45:51 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:45:51 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:46:21 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:46:21 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:46:48 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:46:52 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:46:52 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:47:22 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:47:22 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:47:49 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:47:52 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:47:52 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:48:23 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:48:23 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:48:50 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:48:53 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:48:53 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:49:24 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:49:24 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 12:49:51 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-05 12:49:54 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-05 12:49:54 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-05 16:30:00 | INFO     | src.utils.notifications:send_message:63 | [GENERAL] 📈 日终报告 - 2025-06-05
+运行时间: 6:56:09.968522
+生成信号: 0
+执行交易: 0
+当日盈亏: $0.00
+账户总值: $10,029.63
+风险利用率: 0.0%
+剩余头寸: 0
+2025-06-05 16:30:00 | INFO     | src.bot.trading_bot:_daily_report:288 | 日终报告已生成
+2025-06-06 06:35:55 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 06:35:56 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 06:35:56 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 06:36:26 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 06:36:26 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 06:36:56 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 06:36:57 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 06:36:57 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 06:37:27 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 06:37:27 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 06:37:57 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 06:37:58 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 06:37:58 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 06:38:28 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 06:38:28 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 06:55:28 | ERROR    | src.data.market_data:get_current_bars:91 | 获取K线数据失败: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-06-06 06:55:28 | WARNING  | src.strategy.signals:update_market_data:70 | 无法获取SPY的市场数据
+2025-06-06 06:55:28 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 06:55:28 | ERROR    | src.trading.executor:update_account_info:131 | 更新账户信息失败: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-06-06 06:55:28 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 06:55:28 | INFO     | src.utils.notifications:send_message:63 | [GENERAL] 📊 每小时报告
+时间: 06:55
+当前头寸: 0
+当日交易: 0
+当日盈亏: $0.00
+账户总值: $10,029.63
+2025-06-06 06:55:58 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 06:55:58 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 07:03:16 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 07:03:16 | ERROR    | src.trading.executor:update_account_info:131 | 更新账户信息失败: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-06-06 07:03:16 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 07:03:47 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 07:03:47 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 07:21:07 | ERROR    | src.data.market_data:get_current_bars:91 | 获取K线数据失败: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-06-06 07:21:07 | WARNING  | src.strategy.signals:update_market_data:70 | 无法获取SPY的市场数据
+2025-06-06 07:21:07 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 07:21:07 | ERROR    | src.trading.executor:update_account_info:131 | 更新账户信息失败: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-06-06 07:21:07 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 07:21:37 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 07:21:37 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 07:22:08 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 07:22:08 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 07:22:08 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 07:22:39 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 07:22:39 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 07:23:09 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 07:23:09 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 07:23:09 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 07:23:40 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 07:23:40 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 07:41:17 | ERROR    | src.data.market_data:get_current_bars:91 | 获取K线数据失败: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-06-06 07:41:17 | WARNING  | src.strategy.signals:update_market_data:70 | 无法获取SPY的市场数据
+2025-06-06 07:41:17 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 07:41:17 | ERROR    | src.trading.executor:update_account_info:131 | 更新账户信息失败: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-06-06 07:41:17 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 07:41:47 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 07:41:47 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 07:42:18 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 07:42:18 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 07:42:18 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 07:42:49 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 07:42:49 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:00:21 | ERROR    | src.data.market_data:get_current_bars:91 | 获取K线数据失败: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-06-06 08:00:21 | WARNING  | src.strategy.signals:update_market_data:70 | 无法获取SPY的市场数据
+2025-06-06 08:00:21 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 08:00:21 | ERROR    | src.trading.executor:update_account_info:131 | 更新账户信息失败: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-06-06 08:00:21 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:00:21 | INFO     | src.utils.notifications:send_message:63 | [GENERAL] 📊 每小时报告
+时间: 08:00
+当前头寸: 0
+当日交易: 0
+当日盈亏: $0.00
+账户总值: $10,029.63
+2025-06-06 08:00:51 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 08:00:51 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:01:22 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 08:01:22 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 08:01:22 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:01:53 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$20059.26
+2025-06-06 08:01:53 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:02:23 | INFO     | src.strategy.signals:generate_signals:468 | 生成信号: LONG - VWAP多头突破: 偏离0.46%, MACD转正
+2025-06-06 08:02:23 | INFO     | src.bot.trading_bot:_check_signals:152 | 检测到信号: LONG 置信度: 0.85 原因: VWAP多头突破: 偏离0.46%, MACD转正
+2025-06-06 08:02:23 | INFO     | src.utils.notifications:send_message:63 | [GENERAL] 📡 交易信号
+类型: LONG
+强度: MEDIUM
+置信度: 0.85
+价格: $595.25
+原因: VWAP多头突破: 偏离0.46%, MACD转正
+2025-06-06 08:02:23 | INFO     | src.data.market_data:_get_option_chain_sdk:148 | 开始获取SPY期权链数据 (使用Alpaca SDK)
+2025-06-06 08:02:33 | INFO     | src.data.market_data:_get_option_chain_sdk:162 | ✅ SDK获取期权快照: 9382个快照，用时9.46秒
+2025-06-06 08:02:33 | INFO     | src.data.market_data:_get_option_chain_sdk:258 | 成功解析期权链: 4691个看涨期权, 4691个看跌期权
+2025-06-06 08:02:33 | INFO     | src.data.market_data:find_suitable_options:396 | 找到155个当日到期的CALL期权
+2025-06-06 08:02:33 | INFO     | src.data.market_data:find_suitable_options:435 | 找到61个符合条件的当日到期CALL期权合约
+2025-06-06 08:02:33 | INFO     | src.data.market_data:find_suitable_options:439 |   选项1: SPY250606C00571000, 行权价$571, 估算Delta=0.400, 中间价=$28.48, 到期日=2025-06-06
+2025-06-06 08:02:33 | INFO     | src.data.market_data:find_suitable_options:439 |   选项2: SPY250606C00572000, 行权价$572, 估算Delta=0.400, 中间价=$27.13, 到期日=2025-06-06
+2025-06-06 08:02:33 | INFO     | src.data.market_data:find_suitable_options:439 |   选项3: SPY250606C00573000, 行权价$573, 估算Delta=0.400, 中间价=$26.79, 到期日=2025-06-06
+2025-06-06 08:02:33 | INFO     | src.trading.executor:find_best_option:193 | 选择期权: SPY250606C00571000, 行权价571.0, 估算Delta0.400
+2025-06-06 08:02:33 | INFO     | src.trading.executor:calculate_position_size:156 | 计算头寸大小: 期权价格$28.48, 最大风险$85.25, 合约数量1, 最大限制10张
+2025-06-06 08:02:33 | INFO     | src.trading.executor:execute_trade:245 | 主订单已提交: a234b1e2-dc4a-4015-948b-0f21e3951fac SPY250606C00571000 买入1张 @$28.48
+2025-06-06 08:02:34 | WARNING  | src.trading.executor:execute_trade:310 | 主订单未成交，状态: new
+2025-06-06 08:02:34 | WARNING  | src.bot.trading_bot:_check_signals:166 | 信号执行失败: LONG
+2025-06-06 08:02:34 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 08:02:34 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$14357.24
+2025-06-06 08:02:34 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:03:04 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$14357.24
+2025-06-06 08:03:04 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:03:35 | INFO     | src.strategy.signals:generate_signals:468 | 生成信号: LONG - VWAP多头突破: 偏离0.47%, MACD转正
+2025-06-06 08:03:35 | INFO     | src.bot.trading_bot:_check_signals:152 | 检测到信号: LONG 置信度: 0.85 原因: VWAP多头突破: 偏离0.47%, MACD转正
+2025-06-06 08:03:35 | INFO     | src.utils.notifications:send_message:63 | [GENERAL] 📡 交易信号
+类型: LONG
+强度: MEDIUM
+置信度: 0.85
+价格: $595.22
+原因: VWAP多头突破: 偏离0.47%, MACD转正
+2025-06-06 08:03:35 | INFO     | src.data.market_data:_get_option_chain_sdk:148 | 开始获取SPY期权链数据 (使用Alpaca SDK)
+2025-06-06 08:03:44 | INFO     | src.data.market_data:_get_option_chain_sdk:162 | ✅ SDK获取期权快照: 9382个快照，用时9.34秒
+2025-06-06 08:03:44 | INFO     | src.data.market_data:_get_option_chain_sdk:258 | 成功解析期权链: 4691个看涨期权, 4691个看跌期权
+2025-06-06 08:03:44 | INFO     | src.data.market_data:find_suitable_options:396 | 找到155个当日到期的CALL期权
+2025-06-06 08:03:44 | INFO     | src.data.market_data:find_suitable_options:435 | 找到61个符合条件的当日到期CALL期权合约
+2025-06-06 08:03:44 | INFO     | src.data.market_data:find_suitable_options:439 |   选项1: SPY250606C00571000, 行权价$571, 估算Delta=0.400, 中间价=$28.40, 到期日=2025-06-06
+2025-06-06 08:03:44 | INFO     | src.data.market_data:find_suitable_options:439 |   选项2: SPY250606C00572000, 行权价$572, 估算Delta=0.400, 中间价=$27.73, 到期日=2025-06-06
+2025-06-06 08:03:44 | INFO     | src.data.market_data:find_suitable_options:439 |   选项3: SPY250606C00573000, 行权价$573, 估算Delta=0.400, 中间价=$26.31, 到期日=2025-06-06
+2025-06-06 08:03:44 | INFO     | src.trading.executor:find_best_option:193 | 选择期权: SPY250606C00571000, 行权价571.0, 估算Delta0.400
+2025-06-06 08:03:44 | INFO     | src.trading.executor:calculate_position_size:156 | 计算头寸大小: 期权价格$28.40, 最大风险$85.25, 合约数量1, 最大限制10张
+2025-06-06 08:03:44 | ERROR    | src.trading.executor:execute_trade:315 | 提交主订单失败: {"code":40310100,"message":"trade denied due to pattern day trading protection"}
+2025-06-06 08:03:44 | WARNING  | src.bot.trading_bot:_check_signals:166 | 信号执行失败: LONG
+2025-06-06 08:03:44 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 08:03:44 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$14357.24
+2025-06-06 08:03:44 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:12:53 | ERROR    | src.trading.executor:update_account_info:131 | 更新账户信息失败: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-06-06 08:12:53 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:12:53 | ERROR    | src.data.market_data:get_current_bars:91 | 获取K线数据失败: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2025-06-06 08:12:53 | WARNING  | src.strategy.signals:update_market_data:70 | 无法获取SPY的市场数据
+2025-06-06 08:12:53 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 08:13:23 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$14357.24
+2025-06-06 08:13:23 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:13:55 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 08:13:55 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$14357.24
+2025-06-06 08:13:55 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:14:25 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$14357.24
+2025-06-06 08:14:25 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:14:55 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 08:14:56 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$14357.24
+2025-06-06 08:14:56 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:15:27 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$14357.24
+2025-06-06 08:15:27 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:15:56 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 08:15:57 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$14357.24
+2025-06-06 08:15:57 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:16:27 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10029.63, 买入力$14357.24
+2025-06-06 08:16:27 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:16:57 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 08:16:58 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$10008.61, 买入力$14357.22
+2025-06-06 08:16:58 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:17:28 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$9993.61, 买入力$14357.22
+2025-06-06 08:17:28 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:17:58 | DEBUG    | src.bot.trading_bot:_update_positions:184 | 头寸更新完成
+2025-06-06 08:17:59 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$9972.61, 买入力$14357.22
+2025-06-06 08:17:59 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:18:29 | INFO     | src.trading.executor:update_account_info:125 | 账户更新: 总值$9955.61, 买入力$14357.22
+2025-06-06 08:18:29 | DEBUG    | src.bot.trading_bot:_update_market_data:134 | 市场数据更新完成
+2025-06-06 08:18:35 | INFO     | src.bot.trading_bot:start:78 | 收到停止信号，正在关闭机器人...
+2025-06-06 08:18:35 | INFO     | src.bot.trading_bot:stop:381 | 正在停止交易机器人...
+2025-06-06 08:18:35 | INFO     | src.utils.notifications:send_message:63 | [GENERAL] 🛑 交易机器人已停止
+最终盈亏: $0.00
+总交易次数: 0
+运行时间: 22:44:44.520237
+2025-06-06 08:18:35 | INFO     | src.bot.trading_bot:stop:400 | 交易机器人已安全停止
+2025-06-06 08:18:35 | INFO     | __main__:main:81 | 程序结束

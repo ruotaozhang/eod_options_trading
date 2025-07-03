@@ -1,0 +1,21 @@
+# Trading and Market Data
+alpaca-py==0.28.3
+pandas==2.0.3
+numpy==1.24.3
+ta-lib==0.4.32
+
+# Configuration and Environment
+pydantic==2.5.0
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+
+# Logging and Monitoring
+loguru==0.7.2
+rich==13.7.0
+
+# Scheduling
+schedule==1.2.2
+
+# Utilities
+requests==2.31.0
+pytz==2023.3 

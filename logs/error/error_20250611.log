@@ -1,0 +1,1 @@
+2025-06-12 09:39:47 | ERROR    | src.trading.executor:update_positions:432 | 更新头寸失败: dictionary changed size during iteration

@@ -1,0 +1,21 @@
+2025-06-01 07:55:02 | INFO     | src.utils.logger_setup:setup_logger:64 | 日志系统初始化完成
+2025-06-01 07:55:02 | INFO     | __main__:test_logger:42 | 日志系统测试消息
+2025-06-01 07:55:03 | WARNING  | src.strategy.signals:update_market_data:70 | 无法获取SPY的市场数据
+2025-06-01 07:55:03 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: 'TradeAccount' object has no attribute 'unrealized_pl'
+2025-06-01 07:55:03 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: 'TradeAccount' object has no attribute 'unrealized_pl'
+2025-06-01 07:55:04 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: 'TradeAccount' object has no attribute 'unrealized_pl'
+2025-06-01 07:55:54 | INFO     | src.utils.logger_setup:setup_logger:64 | 日志系统初始化完成
+2025-06-01 07:55:54 | INFO     | __main__:test_logger:42 | 日志系统测试消息
+2025-06-01 07:55:54 | WARNING  | src.strategy.signals:update_market_data:70 | 无法获取SPY的市场数据
+2025-06-01 07:55:55 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: 'TradeAccount' object has no attribute 'unrealized_pl'
+2025-06-01 07:55:55 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: 'TradeAccount' object has no attribute 'unrealized_pl'
+2025-06-01 07:55:55 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: 'TradeAccount' object has no attribute 'unrealized_pl'
+2025-06-01 07:58:07 | INFO     | src.utils.logger_setup:setup_logger:64 | 日志系统初始化完成
+2025-06-01 07:58:07 | INFO     | __main__:test_logger:42 | 日志系统测试消息
+2025-06-01 07:58:07 | WARNING  | src.strategy.signals:update_market_data:70 | 无法获取SPY的市场数据
+2025-06-01 07:58:08 | INFO     | src.trading.executor:update_account_info:121 | 账户更新: 总值$105555.67, 买入力$407265.75
+2025-06-01 07:58:08 | INFO     | src.trading.executor:update_account_info:121 | 账户更新: 总值$105555.67, 买入力$407265.75
+2025-06-01 07:58:08 | INFO     | src.utils.notifications:__init__:39 | 通知管理器初始化完成（简化模式）
+2025-06-01 07:58:08 | INFO     | src.utils.notifications:send_message:63 | [TEST] 通知系统测试消息
+2025-06-01 07:58:08 | INFO     | src.trading.executor:update_account_info:121 | 账户更新: 总值$105555.67, 买入力$407265.75
+2025-06-01 07:58:08 | INFO     | src.utils.notifications:__init__:39 | 通知管理器初始化完成（简化模式）

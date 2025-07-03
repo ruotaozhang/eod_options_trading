@@ -1,0 +1,32 @@
+2025-05-31 23:28:14 | ERROR    | src.data.market_data:get_latest_quote:97 | 获取最新报价失败: <html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2025-05-31 23:28:15 | ERROR    | src.data.market_data:get_current_bars:76 | 获取K线数据失败: <html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2025-05-31 23:28:15 | ERROR    | src.data.market_data:get_current_bars:76 | 获取K线数据失败: <html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2025-05-31 23:28:15 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: {"message": "forbidden."}
+
+2025-05-31 23:28:15 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: {"message": "forbidden."}
+
+2025-05-31 23:28:15 | ERROR    | src.utils.notifications:_send_slack_message:90 | 发送Slack消息失败: Invalid URL 'your_slack_webhook_url': No scheme supplied. Perhaps you meant https://your_slack_webhook_url?
+2025-05-31 23:28:16 | ERROR    | src.utils.notifications:_send_email:141 | 发送邮件失败: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-3124e2e5e77sm3581841a91.20 - gsmtp')
+2025-05-31 23:28:16 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: {"message": "forbidden."}
+

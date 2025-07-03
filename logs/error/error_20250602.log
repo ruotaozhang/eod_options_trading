@@ -1,0 +1,2 @@
+2025-06-02 11:33:49 | ERROR    | src.trading.executor:execute_trade:272 | 提交订单失败: {"code":42210000,"message":"limit price must be limited to 2 decimal places"}
+2025-06-02 11:37:53 | ERROR    | src.trading.executor:execute_trade:272 | 提交订单失败: {"code":42210000,"message":"limit price must be limited to 2 decimal places"}

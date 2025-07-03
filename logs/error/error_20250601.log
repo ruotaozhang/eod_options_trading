@@ -1,0 +1,6 @@
+2025-06-01 07:55:03 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: 'TradeAccount' object has no attribute 'unrealized_pl'
+2025-06-01 07:55:03 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: 'TradeAccount' object has no attribute 'unrealized_pl'
+2025-06-01 07:55:04 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: 'TradeAccount' object has no attribute 'unrealized_pl'
+2025-06-01 07:55:55 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: 'TradeAccount' object has no attribute 'unrealized_pl'
+2025-06-01 07:55:55 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: 'TradeAccount' object has no attribute 'unrealized_pl'
+2025-06-01 07:55:55 | ERROR    | src.trading.executor:update_account_info:121 | 更新账户信息失败: 'TradeAccount' object has no attribute 'unrealized_pl'

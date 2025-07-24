@@ -209,6 +209,28 @@ class TradingExecutor:
     def execute_trade(self, signal: TradingSignal) -> bool:
         """执行交易 - 实时监控模式：主单成交后实时监控止盈止损"""
         try:
+            # 防重复订单检查：检查是否在短时间内重复提交相同信号
+            current_time = datetime.now()
+            signal_key = f"{signal.signal_type.value}_{config.symbol}"
+            
+            # 检查最近5秒内是否有相同的信号被处理
+            if hasattr(self, 'last_signal_time') and hasattr(self, 'last_signal_key'):
+                time_diff = (current_time - self.last_signal_time).total_seconds()
+                if self.last_signal_key == signal_key and time_diff < 5:
+                    logger.warning(f"⚠️ 检测到{time_diff:.1f}秒内重复信号，跳过执行: {signal_key}")
+                    return False
+            
+            # 记录当前信号信息
+            self.last_signal_time = current_time
+            self.last_signal_key = signal_key
+            
+            # 检查是否已有相同期权的持仓
+            if hasattr(self, 'positions') and self.positions:
+                for option_symbol, position in self.positions.items():
+                    if position.position_type.value == signal.signal_type.value:
+                        logger.warning(f"⚠️ 已有相同类型的期权持仓: {option_symbol}，跳过新开仓")
+                        return False
+            
             # 检查交易限制
             if not self._check_trading_limits():
                 return False
@@ -247,19 +269,24 @@ class TradingExecutor:
                 if main_order_status.status in [OrderStatus.FILLED, OrderStatus.PARTIALLY_FILLED]:
                     logger.info(f"主订单已成交: {main_order.id}")
                     
-                    # 获取订单的实际成交价格
-                    fills = self.trading_client.get_order_fills(main_order.id)
-                    if not fills:
-                        logger.error(f"无法获取订单{main_order.id}的成交信息")
-                        return False
-                    
-                    # 计算平均成交价格
-                    total_qty = 0
-                    total_price = 0
-                    for fill in fills:
-                        total_qty += float(fill.qty)
-                        total_price += float(fill.price) * float(fill.qty)
-                    actual_entry_price = total_price / total_qty if total_qty > 0 else 0
+                    # 获取订单的实际成交价格 - 修复：使用订单对象的成交信息
+                    try:
+                        # 重新获取订单最新状态以确保获取到成交信息
+                        updated_order = self.trading_client.get_order_by_id(main_order.id)
+                        
+                        # 使用订单的成交价格信息
+                        if updated_order.filled_avg_price and float(updated_order.filled_avg_price) > 0:
+                            actual_entry_price = float(updated_order.filled_avg_price)
+                        elif updated_order.limit_price and float(updated_order.limit_price) > 0:
+                            actual_entry_price = float(updated_order.limit_price)
+                        else:
+                            actual_entry_price = option_price  # 使用原始期权价格作为备用
+                            
+                        logger.info(f"订单成交价格: ${actual_entry_price:.2f}")
+                        
+                    except Exception as e:
+                        logger.warning(f"获取成交价格失败，使用原始价格: {e}")
+                        actual_entry_price = option_price
                     
                     # 计算止盈止损价格
                     take_profit_price = self._calculate_take_profit(actual_entry_price)
@@ -530,19 +557,22 @@ class TradingExecutor:
             import time
             time.sleep(1)
             
-            # 获取订单的实际成交价格
-            fills = self.trading_client.get_order_fills(order.id)
-            if not fills:
-                logger.error(f"无法获取平仓订单{order.id}的成交信息")
-                return False
-            
-            # 计算平均成交价格
-            total_qty = 0
-            total_price = 0
-            for fill in fills:
-                total_qty += float(fill.qty)
-                total_price += float(fill.price) * float(fill.qty)
-            actual_close_price = total_price / total_qty if total_qty > 0 else 0
+            # 获取订单的实际成交价格 - 修复：使用订单对象的成交信息
+            try:
+                # 重新获取订单最新状态以确保获取到成交信息
+                updated_order = self.trading_client.get_order_by_id(order.id)
+                
+                # 使用订单的成交价格信息
+                if updated_order.filled_avg_price and float(updated_order.filled_avg_price) > 0:
+                    actual_close_price = float(updated_order.filled_avg_price)
+                else:
+                    actual_close_price = position.current_price  # 使用当前价格作为备用
+                    
+                logger.info(f"平仓订单成交价格: ${actual_close_price:.2f}")
+                
+            except Exception as e:
+                logger.warning(f"获取平仓成交价格失败，使用当前价格: {e}")
+                actual_close_price = position.current_price
             
             # 更新头寸的当前价格和盈亏
             position.update_current_price(actual_close_price)

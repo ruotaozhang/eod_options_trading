@@ -551,8 +551,18 @@ class MarketDataProvider:
             
             snapshot = snapshots[option_symbol]
             
+            # 解析期权信息获取行权价
+            try:
+                option_info = self.parse_option_symbol(option_symbol)
+                strike_price = option_info['strike_price']
+            except Exception as e:
+                logger.warning(f"解析期权代码{option_symbol}失败: {e}")
+                strike_price = 0
+            
             # 构建期权数据
             option_data = {
+                'contractSymbol': option_symbol,  # 添加contractSymbol字段
+                'strike': strike_price,  # 添加strike字段
                 'bid': float(snapshot.latest_quote.bid_price) if snapshot.latest_quote.bid_price else 0,
                 'ask': float(snapshot.latest_quote.ask_price) if snapshot.latest_quote.ask_price else 0,
                 'lastPrice': float(latest_trade['price']) if latest_trade else 0,

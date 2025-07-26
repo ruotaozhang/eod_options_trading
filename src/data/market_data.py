@@ -590,13 +590,79 @@ class TechnicalIndicators:
     
     @staticmethod
     def calculate_vwap(df: pd.DataFrame) -> pd.Series:
-        """计算VWAP"""
+        """计算VWAP - 修复版：只使用当日数据，避免跨日污染"""
         if df.empty or 'volume' not in df.columns:
             return pd.Series()
         
-        typical_price = (df['high'] + df['low'] + df['close']) / 3
-        vwap = (typical_price * df['volume']).cumsum() / df['volume'].cumsum()
-        return vwap
+        try:
+            # 使用美国东部时间确定当日数据
+            import pytz
+            from datetime import datetime, date
+            
+            # 获取美东时间的当日日期
+            et_tz = pytz.timezone('US/Eastern') 
+            now_et = datetime.now(et_tz)
+            today_et = now_et.date()
+            
+            # 筛选当日数据 - 处理时区转换
+            if 'timestamp' in df.columns:
+                # 确保timestamp列是datetime类型
+                df_copy = df.copy()
+                df_copy['timestamp'] = pd.to_datetime(df_copy['timestamp'])
+                
+                # 将UTC时间转换为美东时间进行日期比较
+                if df_copy['timestamp'].dt.tz is None:
+                    # 如果没有时区信息，假设是UTC时间
+                    df_copy['timestamp'] = df_copy['timestamp'].dt.tz_localize('UTC')
+                
+                # 转换为美东时间
+                df_copy['timestamp_et'] = df_copy['timestamp'].dt.tz_convert(et_tz)
+                
+                # 筛选当日数据
+                today_mask = df_copy['timestamp_et'].dt.date == today_et
+                today_data = df_copy[today_mask].copy()
+                
+                if today_data.empty:
+                    # 如果没有当日数据，返回空Series但保持索引结构
+                    return pd.Series(index=df.index, dtype=float)
+                
+                logger.debug(f"VWAP计算: 总数据{len(df)}条, 当日数据{len(today_data)}条, 日期范围: {today_et}")
+                
+            else:
+                # 后备方案：如果没有timestamp列，使用原始逻辑但记录警告
+                logger.warning("VWAP计算: 数据中缺少timestamp列，使用原始计算方法")
+                today_data = df.copy()
+            
+            # 计算当日VWAP
+            typical_price = (today_data['high'] + today_data['low'] + today_data['close']) / 3
+            
+            # 计算累计VWAP（只针对当日数据）
+            cumulative_volume = today_data['volume'].cumsum()
+            cumulative_typical_volume = (typical_price * today_data['volume']).cumsum()
+            
+            # 避免除零错误
+            vwap_values = cumulative_typical_volume / cumulative_volume.replace(0, np.nan)
+            
+            # 创建结果Series，为完整的DataFrame索引填充数据
+            result = pd.Series(index=df.index, dtype=float)
+            
+            if 'timestamp' in df.columns and not today_data.empty:
+                # 将计算的VWAP值映射到对应的索引位置
+                result.loc[today_data.index] = vwap_values.values
+                
+                # 对于当日之前的数据，设置为NaN
+                non_today_mask = ~(df_copy['timestamp_et'].dt.date == today_et)
+                result.loc[non_today_mask] = np.nan
+            else:
+                # 后备方案
+                result = vwap_values
+            
+            return result
+            
+        except Exception as e:
+            logger.error(f"VWAP计算失败: {e}")
+            # 返回空Series但保持索引结构
+            return pd.Series(index=df.index, dtype=float)
     
     @staticmethod
     def calculate_rsi(df: pd.DataFrame, period: int = 14) -> pd.Series:

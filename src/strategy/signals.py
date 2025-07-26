@@ -171,20 +171,40 @@ class SignalGenerator:
             return None
     
     def check_vwap_breakout(self, symbol: str) -> Optional[TradingSignal]:
-        """检查VWAP突破信号"""
+        """检查VWAP突破信号 - 修复版：正确处理当日VWAP数据"""
         try:
             if self.current_bars.empty or self.vwap_data.empty:
                 return None
+            
+            # 过滤掉NaN值，只使用有效的VWAP数据
+            valid_vwap_mask = ~self.vwap_data.isna()
+            valid_indices = self.vwap_data[valid_vwap_mask].index
+            
+            if len(valid_indices) == 0:
+                logger.debug("VWAP信号检查: 没有有效的VWAP数据")
+                return None
+            
+            # 获取有效VWAP数据对应的价格数据
+            valid_bars = self.current_bars.loc[valid_indices]
+            valid_vwap = self.vwap_data.loc[valid_indices]
+            
+            # 检查是否有足够的数据进行确认
+            confirmation_minutes = strategy_params.vwap_confirmation_minutes
+            if len(valid_bars) < confirmation_minutes:
+                logger.debug(f"VWAP信号检查: 当日有效数据不足({len(valid_bars)}条), 需要至少{confirmation_minutes}条")
+                return None
                 
             # 获取最近几分钟的数据
-            recent_bars = self.current_bars.tail(strategy_params.vwap_confirmation_minutes)
-            recent_vwap = self.vwap_data.tail(strategy_params.vwap_confirmation_minutes)
-            
-            if len(recent_bars) < strategy_params.vwap_confirmation_minutes:
-                return None
+            recent_bars = valid_bars.tail(confirmation_minutes)
+            recent_vwap = valid_vwap.tail(confirmation_minutes)
             
             current_price = recent_bars['close'].iloc[-1]
             current_vwap = recent_vwap.iloc[-1]
+            
+            # 验证VWAP数据有效性
+            if pd.isna(current_vwap) or current_vwap <= 0:
+                logger.debug("VWAP信号检查: 当前VWAP值无效")
+                return None
             
             # 计算VWAP偏离百分比
             vwap_deviation = (current_price - current_vwap) / current_vwap * 100
@@ -200,7 +220,7 @@ class SignalGenerator:
             # 检查价格是否持续在VWAP上方/下方
             threshold_pct = strategy_params.vwap_breakout_threshold
             
-            # 多头信号：价格持续在VWAP+0.15%上方，MACD柱状图转正
+            # 多头信号：价格持续在VWAP+阈值上方，MACD柱状图转正
             if (vwap_deviation > threshold_pct and
                 all(recent_bars['close'] > recent_vwap * (1 + threshold_pct/100)) and
                 current_macd_hist > prev_macd_hist and current_macd_hist > 0):
@@ -213,16 +233,17 @@ class SignalGenerator:
                     strength=SignalStrength.MEDIUM,
                     timestamp=datetime.now(),
                     price=current_price,
-                    reason=f"VWAP多头突破: 偏离{vwap_deviation:.2f}%, MACD转正",
+                    reason=f"VWAP多头突破: 偏离{vwap_deviation:.2f}%, MACD转正, 当日VWAP${current_vwap:.2f}",
                     confidence=confidence,
                     additional_data={
                         'vwap': current_vwap,
                         'vwap_deviation': vwap_deviation,
-                        'macd_histogram': current_macd_hist
+                        'macd_histogram': current_macd_hist,
+                        'valid_vwap_points': len(valid_indices)
                     }
                 )
             
-            # 空头信号：价格持续在VWAP-0.15%下方，MACD柱状图转负
+            # 空头信号：价格持续在VWAP-阈值下方，MACD柱状图转负
             elif (vwap_deviation < -threshold_pct and
                   all(recent_bars['close'] < recent_vwap * (1 - threshold_pct/100)) and
                   current_macd_hist < prev_macd_hist and current_macd_hist < 0):
@@ -235,12 +256,13 @@ class SignalGenerator:
                     strength=SignalStrength.MEDIUM,
                     timestamp=datetime.now(),
                     price=current_price,
-                    reason=f"VWAP空头突破: 偏离{vwap_deviation:.2f}%, MACD转负",
+                    reason=f"VWAP空头突破: 偏离{vwap_deviation:.2f}%, MACD转负, 当日VWAP${current_vwap:.2f}",
                     confidence=confidence,
                     additional_data={
                         'vwap': current_vwap,
                         'vwap_deviation': vwap_deviation,
-                        'macd_histogram': current_macd_hist
+                        'macd_histogram': current_macd_hist,
+                        'valid_vwap_points': len(valid_indices)
                     }
                 )
                 

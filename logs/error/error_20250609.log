@@ -1,3 +1,0 @@
-2025-06-10 11:34:32 | ERROR    | src.trading.executor:update_account_info:131 | 更新账户信息失败: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))
-2025-06-10 11:35:08 | ERROR    | src.data.market_data:get_current_bars:91 | 获取K线数据失败: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))
-2025-06-10 11:35:38 | ERROR    | src.trading.executor:update_account_info:131 | 更新账户信息失败: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x125d01f40>: Failed to resolve 'paper-api.alpaca.markets' ([Errno 8] nodename nor servname provided, or not known)"))

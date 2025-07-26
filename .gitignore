@@ -1,0 +1,147 @@
+# 🚫 不应该上传到GitHub的文件和目录
+
+# ================================
+# 敏感信息文件
+# ================================
+.env
+.env.*
+config.env
+!config.env.example
+*.key
+*.pem
+*.p12
+secret.txt
+secrets/
+
+# ================================
+# 日志文件和运行时数据
+# ================================
+logs/
+*.log
+*.log.*
+*.log.zip
+log.*
+*.log.gz
+crash.log
+
+# 交易数据文件
+*.csv
+option_track_*.csv
+trades_*.log
+eod_trading_*.log
+
+# ================================
+# Python缓存和编译文件
+# ================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ================================
+# IDE和编辑器文件
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ================================
+# 测试和覆盖率报告
+# ================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# ================================
+# 虚拟环境
+# ================================
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# ================================
+# 数据文件和临时文件
+# ================================
+*.db
+*.sqlite
+*.sqlite3
+data/
+temp/
+tmp/
+*.tmp
+*.bak
+*.backup
+
+# ================================
+# 图片和媒体文件（除了文档用的小图片）
+# ================================
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.svg
+# 但保留文档用的小图片
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.svg
+
+# ================================
+# 系统文件
+# ================================
+.nohup.out
+nohup.out
+*.pid
+*.lock
+
+# ================================
+# 特定于项目的文件
+# ================================
+trading_bot.log
+*.profile
+performance_*.txt
+debug_*.txt
+
+# ================================
+# 备份文件
+# ================================
+*.orig
+*.rej
+*~
+.#*
+#*# 

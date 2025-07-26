@@ -2,13 +2,13 @@
 
 ## 🔧 配置选项
 
-在 `src/config.py` 中新增了三个监控频率配置参数：
+在 `src/config.py` 中配置的监控频率参数：
 
 ```python
-# 监控频率配置 (秒)
-position_check_seconds = 15      # 持仓检查频率 (有持仓时)
-market_data_update_seconds = 30  # 市场数据更新频率  
-signal_check_minutes = 1         # 信号检查频率(分钟)
+# 监控频率配置 (秒) - 当前实际设置
+position_check_seconds = 3       # 持仓检查频率 (极高频：3秒)
+market_data_update_seconds = 3   # 市场数据更新频率 (极高频：3秒)
+signal_check_seconds = 3         # 信号检查频率 (极高频：3秒)
 ```
 
 ## 🔬 性能测试结果
@@ -24,11 +24,11 @@ signal_check_minutes = 1         # 信号检查频率(分钟)
 
 ## ⚡ 推荐的高频监控配置
 
-### 🚀 激进模式 (推荐)
+### 🚀 当前设置 (极高频模式)
 ```python
-position_check_seconds = 5       # 5秒检查持仓
-market_data_update_seconds = 10  # 10秒更新市场数据
-signal_check_minutes = 1         # 1分钟信号检查
+position_check_seconds = 3       # 3秒检查持仓
+market_data_update_seconds = 3   # 3秒更新市场数据
+signal_check_seconds = 3         # 3秒信号检查
 ```
 
 **优势：**
@@ -36,11 +36,11 @@ signal_check_minutes = 1         # 1分钟信号检查
 - 实时价格跟踪
 - API使用率仅6% (安全范围内)
 
-### ⚡ 平衡模式 (当前优化)
+### ⚡ 平衡模式 (备选配置)
 ```python
-position_check_seconds = 10      # 10秒检查持仓
-market_data_update_seconds = 15  # 15秒更新市场数据
-signal_check_minutes = 1         # 1分钟信号检查
+position_check_seconds = 5       # 5秒检查持仓
+market_data_update_seconds = 5   # 5秒更新市场数据
+signal_check_seconds = 5         # 5秒信号检查
 ```
 
 **优势：**

@@ -83,7 +83,7 @@ take_profit_pct = 50.0             # 止盈50%
 # 策略参数
 orb_period_minutes = 15            # ORB周期15分钟
 vwap_deviation_pct = 0.2           # VWAP偏离0.2%
-vwap_breakout_threshold = 0.15     # VWAP突破阈值0.15%
+vwap_breakout_threshold = 0.12     # VWAP突破阈值0.12%
 
 # 监控频率（极高频）
 position_check_seconds = 3         # 持仓检查3秒

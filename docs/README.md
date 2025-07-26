@@ -66,24 +66,18 @@ ALPACA_API_KEY=your_api_key_here
 ALPACA_SECRET_KEY=your_secret_key_here
 ALPACA_BASE_URL=https://paper-api.alpaca.markets  # 纸面交易
 
-# 交易配置
-ACCOUNT_SIZE=50000
+# 风险管理配置（账户资金自动从API获取）
 MAX_DAILY_RISK_PCT=2.0
 MAX_SINGLE_TRADE_RISK_PCT=1.0
+MAX_DAILY_TRADES=5
 ```
 
 ### 3. 运行方式
 
-#### 🖥️ 终端监控模式（推荐）
-实时监控交易状态，无需启动交易：
-```bash
-python terminal_monitor.py
-```
-
 #### 🤖 自动交易模式
-启动完整的交易机器人：
+启动交易机器人：
 ```bash
-# 测试模式
+# 测试模式（推荐，默认模式）
 python main.py --mode test
 
 # 实盘模式
@@ -91,6 +85,12 @@ python main.py --mode live
 
 # 干运行模式（不执行实际交易）
 python main.py --dry-run
+
+# 快速退出模式
+python main.py --quick-exit
+
+# 查看日志
+tail -f logs/trading/eod_trading_$(date +%Y%m%d).log
 ```
 
 #### 🧪 系统测试

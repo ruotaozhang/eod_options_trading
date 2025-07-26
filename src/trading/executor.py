@@ -21,6 +21,7 @@ import pytz
 from ..config import config, strategy_params
 from ..data.market_data import MarketDataProvider
 from ..strategy.signals import TradingSignal, SignalType
+from ..utils.data_logger import strategy_data_logger
 
 
 class PositionType(Enum):
@@ -331,6 +332,9 @@ class TradingExecutor:
                     except Exception as e:
                         logger.warning(f"track_option通知失败: {e}")
                     
+                    # 记录开仓交易分析数据
+                    self._log_trade_open_data(position, signal, actual_entry_price)
+                    
                     logger.info(f"🎯 实时监控交易启动: {position_type.value} {option_symbol} "
                                f"数量{position_size} 入场价${actual_entry_price:.2f} "
                                f"止盈${take_profit_price:.2f} 止损${stop_loss_price:.2f}")
@@ -483,6 +487,9 @@ class TradingExecutor:
             # 更新风险指标
             self._update_risk_metrics()
             
+            # 记录表现数据
+            self._log_performance_data()
+            
             return True
             
         except Exception as e:
@@ -611,6 +618,9 @@ class TradingExecutor:
                     self.trading_bot_ref.update_option_close_price(position.option_symbol, actual_close_price)
             except Exception as e:
                 logger.warning(f"update_option_close_price通知失败: {e}")
+            
+            # 记录平仓交易分析数据
+            self._log_trade_close_data(position, actual_close_price, reason)
             
             # 根据止盈止损类型显示不同信息
             if "止盈" in reason:
@@ -1020,4 +1030,102 @@ class TradingExecutor:
             
         except Exception as e:
             logger.error(f"同步现有持仓失败: {e}")
-            return False 
+            return False
+    
+    def _log_performance_data(self):
+        """记录表现数据"""
+        try:
+            # 获取账户信息
+            risk_summary = self.get_risk_summary()
+            position_summary = self.get_position_summary()
+            
+            performance_data = {
+                'account_value': risk_summary.get('account_value', 0),
+                'buying_power': risk_summary.get('buying_power', 0),
+                'daily_pnl': risk_summary.get('daily_pnl', 0),
+                'unrealized_pnl': position_summary.get('total_unrealized_pnl', 0),
+                'realized_pnl': risk_summary.get('daily_realized_pnl', 0),
+                'position_count': position_summary.get('total_positions', 0),
+                'daily_trades': position_summary.get('daily_trades', 0),
+                'risk_utilization_pct': risk_summary.get('risk_utilization_pct', 0),
+                'max_daily_risk': risk_summary.get('max_daily_risk', 0)
+            }
+            
+            strategy_data_logger.log_performance(performance_data)
+            
+        except Exception as e:
+            logger.error(f"记录表现数据失败: {e}")
+    
+    def _log_trade_open_data(self, position: OptionPosition, signal: TradingSignal, entry_price: float):
+        """记录开仓交易分析数据"""
+        try:
+            # 解析期权信息
+            option_info = self.market_data.parse_option_symbol(position.option_symbol)
+            
+            # 获取标的价格
+            underlying_price = self.market_data.get_current_price(position.symbol)
+            
+            trade_data = {
+                'action': '开仓',
+                'option_symbol': position.option_symbol,
+                'option_type': 'CALL' if position.position_type == PositionType.LONG_CALL else 'PUT',
+                'strike_price': option_info.get('strike_price', 0),
+                'quantity': position.quantity,
+                'price': entry_price,
+                'signal_type': signal.signal_type.value,
+                'signal_confidence': signal.confidence,
+                'holding_time': 0,  # 开仓时为0
+                'pnl_amount': 0,  # 开仓时为0
+                'pnl_percent': 0,  # 开仓时为0
+                'stop_loss': position.stop_loss,
+                'take_profit': position.take_profit,
+                'exit_reason': '',  # 开仓时为空
+                'underlying_entry_price': underlying_price,
+                'underlying_exit_price': 0  # 开仓时为0
+            }
+            
+            strategy_data_logger.log_trade_analysis(trade_data)
+            
+        except Exception as e:
+            logger.error(f"记录开仓交易数据失败: {e}")
+    
+    def _log_trade_close_data(self, position: OptionPosition, close_price: float, reason: str):
+        """记录平仓交易分析数据"""
+        try:
+            # 解析期权信息
+            option_info = self.market_data.parse_option_symbol(position.option_symbol)
+            
+            # 获取标的价格
+            underlying_price = self.market_data.get_current_price(position.symbol)
+            
+            # 计算持有时间（分钟）
+            holding_time = (datetime.now() - position.entry_time).total_seconds() / 60
+            
+            # 计算盈亏百分比
+            pnl_percent = 0
+            if position.entry_price > 0:
+                pnl_percent = (close_price - position.entry_price) / position.entry_price * 100
+            
+            trade_data = {
+                'action': '平仓',
+                'option_symbol': position.option_symbol,
+                'option_type': 'CALL' if position.position_type == PositionType.LONG_CALL else 'PUT',
+                'strike_price': option_info.get('strike_price', 0),
+                'quantity': position.quantity,
+                'price': close_price,
+                'signal_type': '',  # 平仓时不需要信号类型
+                'signal_confidence': 0,  # 平仓时不需要信号置信度
+                'holding_time': holding_time,
+                'pnl_amount': position.realized_pnl,
+                'pnl_percent': pnl_percent,
+                'stop_loss': position.stop_loss,
+                'take_profit': position.take_profit,
+                'exit_reason': reason,
+                'underlying_entry_price': 0,  # 平仓时不需要入场价
+                'underlying_exit_price': underlying_price
+            }
+            
+            strategy_data_logger.log_trade_analysis(trade_data)
+            
+        except Exception as e:
+            logger.error(f"记录平仓交易数据失败: {e}") 

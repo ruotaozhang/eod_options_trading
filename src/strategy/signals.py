@@ -13,6 +13,7 @@ from loguru import logger
 
 from ..data.market_data import MarketDataProvider, TechnicalIndicators
 from ..config import strategy_params
+from ..utils.data_logger import strategy_data_logger
 
 
 class SignalType(Enum):
@@ -474,6 +475,9 @@ class SignalGenerator:
         if not self.update_market_data(symbol):
             return signals
         
+        # 收集市场数据用于记录
+        market_data_for_log = self._collect_market_data_for_log(symbol)
+        
         # 检查各种信号
         signal_methods = [
             self.check_opening_range_breakout,
@@ -488,8 +492,15 @@ class SignalGenerator:
                 if signal:
                     signals.append(signal)
                     logger.info(f"生成信号: {signal.signal_type.value} - {signal.reason}")
+                    
+                    # 记录信号数据
+                    self._log_signal_data(signal, market_data_for_log)
+                    
             except Exception as e:
                 logger.error(f"信号生成方法{method.__name__}失败: {e}")
+                
+        # 记录市场数据（无论是否有信号）
+        strategy_data_logger.log_market_data(market_data_for_log)
                 
         # 更新信号历史
         for signal in signals:
@@ -528,4 +539,92 @@ class SignalGenerator:
                 "price": self.last_signal.price,
                 "confidence": self.last_signal.confidence
             } if self.last_signal else None
-        } 
+        }
+    
+    def _collect_market_data_for_log(self, symbol: str) -> Dict:
+        """收集市场数据用于记录"""
+        try:
+            # 获取当前价格
+            current_price = 0
+            if not self.current_bars.empty:
+                current_price = self.current_bars['close'].iloc[-1]
+            
+            # 获取技术指标
+            rsi_series = self.indicators.calculate_rsi(self.current_bars)
+            current_rsi = rsi_series.iloc[-1] if not rsi_series.empty else 0
+            
+            macd_data = self.indicators.calculate_macd(self.current_bars)
+            current_macd = macd_data['histogram'].iloc[-1] if not macd_data['histogram'].empty else 0
+            
+            current_vwap = self.vwap_data.iloc[-1] if not self.vwap_data.empty else 0
+            vwap_deviation = 0
+            if current_vwap > 0:
+                vwap_deviation = (current_price - current_vwap) / current_vwap * 100
+            
+            # 获取成交量信息
+            current_volume = 0
+            volume_ratio = 1
+            if not self.current_bars.empty:
+                current_volume = self.current_bars['volume'].iloc[-1]
+                avg_volume = self.current_bars['volume'].tail(20).mean()
+                if avg_volume > 0:
+                    volume_ratio = current_volume / avg_volume
+            
+            # 获取期权相关数据
+            option_chain = self.market_data.get_option_chain(symbol)
+            option_count = len(option_chain.get('calls', [])) + len(option_chain.get('puts', []))
+            
+            best_call_price = 0
+            best_put_price = 0
+            if option_chain.get('calls'):
+                # 选择接近当前价格的期权
+                for call in option_chain['calls']:
+                    if abs(call['strike'] - current_price) < 2:
+                        best_call_price = call.get('midPrice', 0)
+                        break
+            
+            if option_chain.get('puts'):
+                for put in option_chain['puts']:
+                    if abs(put['strike'] - current_price) < 2:
+                        best_put_price = put.get('midPrice', 0)
+                        break
+            
+            return {
+                'underlying_price': current_price,
+                'bid': 0,  # 需要从quote获取
+                'ask': 0,  # 需要从quote获取
+                'volume': current_volume,
+                'rsi': current_rsi,
+                'vwap': current_vwap,
+                'vwap_deviation': vwap_deviation,
+                'macd': current_macd,
+                'option_count': option_count,
+                'best_call_price': best_call_price,
+                'best_put_price': best_put_price,
+                'vix': 0,  # 需要单独获取VIX数据
+                'market_open': True,  # 需要判断市场状态
+                'orb_high': self.orb_levels.get('high', 0),
+                'orb_low': self.orb_levels.get('low', 0),
+                'volume_ratio': volume_ratio
+            }
+            
+        except Exception as e:
+            logger.error(f"收集市场数据失败: {e}")
+            return {}
+    
+    def _log_signal_data(self, signal: TradingSignal, market_data: Dict):
+        """记录信号数据"""
+        try:
+            signal_data = {
+                'type': signal.signal_type.value,
+                'strength': signal.strength.value,
+                'confidence': signal.confidence,
+                'price': signal.price,
+                'reason': signal.reason
+            }
+            
+            # 记录信号（默认为未执行状态，执行状态由TradingExecutor更新）
+            strategy_data_logger.log_signal(signal_data, market_data, executed=False, execution_reason="等待执行")
+            
+        except Exception as e:
+            logger.error(f"记录信号数据失败: {e}") 

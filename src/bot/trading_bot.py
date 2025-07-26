@@ -24,6 +24,7 @@ from ..strategy.signals import SignalGenerator, TradingSignal, SignalType
 from ..trading.executor import TradingExecutor
 from ..utils.notifications import NotificationManager
 from ..utils.logger_setup import setup_logger
+from ..utils.data_logger import strategy_data_logger
 
 
 class EODOptionsTradingBot:
@@ -377,11 +378,52 @@ class EODOptionsTradingBot:
                 f"剩余头寸: {position_summary['total_positions']}"
             )
             
+            # 保存每日汇总数据
+            self._save_daily_summary(position_summary, risk_summary, signal_summary, session_duration)
+            
             self.notification_manager.send_message(report_message)
             logger.info("日终报告已生成")
             
         except Exception as e:
             logger.error(f"生成日终报告失败: {e}")
+    
+    def _save_daily_summary(self, position_summary, risk_summary, signal_summary, session_duration):
+        """保存每日汇总数据"""
+        try:
+            summary_data = {
+                'trading_date': datetime.now().strftime('%Y-%m-%d'),
+                'session_duration_minutes': session_duration.total_seconds() / 60,
+                'signals_generated': self.session_stats['signals_generated'],
+                'trades_executed': self.session_stats['trades_executed'],
+                'total_pnl': position_summary['daily_pnl'],
+                'realized_pnl': position_summary.get('daily_realized_pnl', 0),
+                'unrealized_pnl': position_summary.get('total_unrealized_pnl', 0),
+                'account_value': risk_summary['account_value'],
+                'max_daily_risk': risk_summary['max_daily_risk'],
+                'risk_utilization_pct': risk_summary['risk_utilization_pct'],
+                'final_positions': position_summary['total_positions'],
+                'total_signals': signal_summary.get('total_signals', 0),
+                'winning_trades': 0,  # 需要计算
+                'losing_trades': 0,   # 需要计算
+                'win_rate': 0,        # 需要计算
+                'avg_holding_time': 0, # 需要计算
+                'best_trade': self.session_stats.get('best_trade', 0),
+                'worst_trade': self.session_stats.get('worst_trade', 0),
+                'config_snapshot': {
+                    'stop_loss_pct': strategy_params.config.stop_loss_pct,
+                    'take_profit_pct': strategy_params.config.take_profit_pct,
+                    'max_daily_risk_pct': strategy_params.config.max_daily_risk_pct,
+                    'max_single_trade_risk_pct': strategy_params.config.max_single_trade_risk_pct,
+                    'orb_period_minutes': strategy_params.config.orb_period_minutes,
+                    'symbol': config.symbol
+                }
+            }
+            
+            strategy_data_logger.save_daily_summary(summary_data)
+            logger.info("每日汇总数据已保存")
+            
+        except Exception as e:
+            logger.error(f"保存每日汇总数据失败: {e}")
     
     def _should_execute_signal(self, signal: TradingSignal) -> bool:
         """判断是否应该执行信号"""

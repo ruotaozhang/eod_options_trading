@@ -132,7 +132,7 @@ nohup.out
 # ================================
 # 特定于项目的文件
 # ================================
-trading_bot.log
+logs/trading_bot.log
 *.profile
 performance_*.txt
 debug_*.txt

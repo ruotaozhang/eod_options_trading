@@ -31,7 +31,7 @@
 - ✅ `logs/trading/` - 25个交易日志文件  
 - ✅ `logs/trades/` - 17个交易记录文件
 - ✅ `logs/track/` - 18个期权追踪CSV文件
-- ✅ `trading_bot.log` - 主日志文件
+- ✅ `logs/trading_bot.log` - 旧版主日志文件（已移至logs目录）
 
 #### 3. Python缓存文件
 - ✅ `__pycache__/` 目录（多个）
